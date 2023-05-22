@@ -13,7 +13,7 @@ import Button from '../Button';
 import Image from 'next/image';
 import { toast } from 'react-hot-toast';
 
-const UPLOADPRESET = "dwdn2mpp"
+
 
 
 interface SettingsModalProps {
@@ -29,8 +29,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
 }) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
-
-  console.log(currentUser, '&TEST_CURRENT_USER')
+  const UPLOADPRESET = "dwdn2mpp"
 
   const {
     register,
